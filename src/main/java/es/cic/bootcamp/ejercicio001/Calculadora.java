@@ -2,9 +2,12 @@ package es.cic.bootcamp.ejercicio001;
 
 public class Calculadora {
 	private Coprocesador coprocesador;
-	 
-	public int sumar(int s1, int s2) {
-		return s1 + s2;
+	 int total=0;
+	public int sumar(int...s) {
+		for(int i=0;i<s.length;i++) {
+			total += s[i];
+		}
+		return total;
 		 
 	}
 	
